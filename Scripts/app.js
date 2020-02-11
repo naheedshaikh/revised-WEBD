@@ -69,20 +69,8 @@
         //move the paragraph above the h1
         h1.parentNode.insertBefore(anothetParagraph, h1);
 
-        //remove last child
-        //parentDiv.removeChild(parentDiv.lastChild);
-
-        //remove first child
-        //parentDiv.removeChild(parentDiv.childNodes[1]);
-
-        //console.log(parentDiv.children.length);
-
-        for(let index = 0; index < parentDiv.childNodes.length; index++)
-        {
-            let childNodes = parentDiv.childNodes[0];
-            parentDiv.removeChild(childNodes);
-        }
-
+        let ul = document.getElementsByTagName("ul")[0];
+        console.log(ul);
     }
 
     window.addEventListener("load", Start);

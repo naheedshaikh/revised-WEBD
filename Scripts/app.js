@@ -1,9 +1,9 @@
+"use strict";
 // IIFE - Immediately Invoked Function Expression
 // means? -> anonyomous self-executing function
 
 (function(){
-
-    
+  
     let h2;
 
      //event handlers

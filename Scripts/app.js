@@ -70,12 +70,18 @@
         h1.parentNode.insertBefore(anothetParagraph, h1);
 
         //remove last child
-        parentDiv.removeChild(parentDiv.lastChild);
+        //parentDiv.removeChild(parentDiv.lastChild);
 
         //remove first child
-        parentDiv.removeChild(parentDiv.childNodes[1]);
+        //parentDiv.removeChild(parentDiv.childNodes[1]);
 
-        console.log(parentDiv.children.length);
+        //console.log(parentDiv.children.length);
+
+        for(let index =0; index < parentDiv.childNodes.length; index++)
+        {
+            console.log(parentDiv.childNodes[index]);
+        }
+
     }
 
     window.addEventListener("load", Start);

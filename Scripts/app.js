@@ -77,9 +77,10 @@
 
         //console.log(parentDiv.children.length);
 
-        for(let index =0; index < parentDiv.childNodes.length; index++)
+        for(let index = 0; index < parentDiv.childNodes.length; index++)
         {
-            console.log(parentDiv.childNodes[index]);
+            let childNodes = parentDiv.childNodes[0];
+            parentDiv.removeChild(childNodes);
         }
 
     }

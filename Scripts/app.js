@@ -68,6 +68,8 @@
 
         //move the paragraph above the h1
         h1.parentNode.insertBefore(anothetParagraph, h1);
+
+        parentDiv.removeChild(parentDiv.lastChild);
     }
 
     window.addEventListener("load", Start);

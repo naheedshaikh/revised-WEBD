@@ -71,6 +71,11 @@
 
         let ul = document.getElementsByTagName("ul")[0];
         console.log(ul);
+
+        //hide li from array of child nodes
+        ul.childNodes.forEach(li => {
+            console.log(li);
+        });
     }
 
     window.addEventListener("load", Start);

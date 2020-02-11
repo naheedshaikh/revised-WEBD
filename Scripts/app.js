@@ -74,6 +74,8 @@
 
         //remove first child
         parentDiv.removeChild(parentDiv.childNodes[1]);
+
+        console.log(parentDiv.children.length);
     }
 
     window.addEventListener("load", Start);

@@ -13,6 +13,17 @@ class Person
         console.log(`${this.name} says Hello!`);
     }
 }
+class Student extends Person{
+    constructor(name, age, studentID)
+    {
+        super(name, age);
+        this.studentID = studentID;
+    }
+    isStudying()
+    {
+        console.log(`${this.name} with a studentID of ${this.studentID} is studying.`);
+    }
+}
 
 
 // IIFE - Immediately Invoked Function Expression
@@ -106,8 +117,9 @@ class Person
     ul.lastElementChild.style.fontWeight = "bold";
     ul.lastElementChild.lastElementChild.style.color = "green";
 
-    let neel = new Person("Neel", 30);
+    let neel = new Student("Neel", 30, "1234567a");
     neel.saysHello();
+    neel.isStudying();
 
     }
     //https://github.com/naheedshaikh/revised-WEBD.git

@@ -1,31 +1,5 @@
 "use strict";
 
-class Person
-{
-    //constructor
-    constructor(name, age)
-    {
-        this.name = name;
-        this.age = age;
-    }
-    saysHello()
-    {
-        console.log(`${this.name} says Hello!`);
-    }
-}
-class Student extends Person{
-    constructor(name, age, studentID)
-    {
-        super(name, age);
-        this.studentID = studentID;
-    }
-    isStudying()
-    {
-        console.log(`${this.name} with a studentID of ${this.studentID} is studying.`);
-    }
-}
-
-
 // IIFE - Immediately Invoked Function Expression
 // means? -> anonyomous self-executing function
 

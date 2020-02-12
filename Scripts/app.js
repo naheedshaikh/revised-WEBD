@@ -87,6 +87,8 @@
     //to hide only last element      of nav bar
     //ul.lastElementChild.style.display = "none";
 
+    ul.lastElementChild.style.fontWeight = "bold";
+    ul.lastElementChild.lastElementChild.style.color = "green";
     }
     //https://github.com/naheedshaikh/revised-WEBD.git
     window.addEventListener("load", Start);

@@ -72,14 +72,22 @@
         let ul = document.getElementsByTagName("ul")[0];
         console.log(ul);
 
-        //hide li navbar elemets
-       for(let index = 0; index < ul.children.length; index++)
-        {
-              let child =  ul.children[index];
-              child.style.display = "none"
-        }
-        
-    }
+    //     //hide li navbar elemets
+    //    for(let index = 0; index < ul.children.length; index++)
+    //     {
+    //           let child =  ul.children[index];
+    //           child.style.display = "none"
+    //     }
+    
+    //to hide all the elements from nav bar
+    /* for (const child of ul.children) 
+    {
+        child.style.display = "none";
+    } */
+    //to hide only last element      of nav bar
+    ul.lastElementChild.style.display = "none";
 
+    }
+    //https://github.com/naheedshaikh/revised-WEBD.git
     window.addEventListener("load", Start);
 })();

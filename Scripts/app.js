@@ -1,4 +1,20 @@
 "use strict";
+
+class Person
+{
+    //constructor
+    constructor(name, age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+    saysHello()
+    {
+        console.log(`${this.name} says Hello!`);
+    }
+}
+
+
 // IIFE - Immediately Invoked Function Expression
 // means? -> anonyomous self-executing function
 
@@ -89,6 +105,10 @@
 
     ul.lastElementChild.style.fontWeight = "bold";
     ul.lastElementChild.lastElementChild.style.color = "green";
+
+    let neel = new Person("Neel", 30);
+    neel.saysHello();
+
     }
     //https://github.com/naheedshaikh/revised-WEBD.git
     window.addEventListener("load", Start);

@@ -85,7 +85,7 @@
         child.style.display = "none";
     } */
     //to hide only last element      of nav bar
-    ul.lastElementChild.style.display = "none";
+    //ul.lastElementChild.style.display = "none";
 
     }
     //https://github.com/naheedshaikh/revised-WEBD.git

@@ -40,8 +40,40 @@
         });
 
         h2.addEventListener("mouseover", MouseOver);
-
         h2.addEventListener("mouseout", MouseOut);
+
+        //creating a new paragraph element
+        let firstParagraph = document.createElement("p");
+        //configuring the new element
+        firstParagraph.textContent = "This is a very short paragraph!";
+
+        //get a refrence to the parenetNode of the h2 element
+        let parentDiv = h2.parentNode;
+
+        //insert the new paragraph before the h2 element
+        parentDiv.insertBefore(firstParagraph, h2);
+       
+        //get a refrence to the first h1 tag
+        let h1 = document.getElementsByTagName("h1")[0];
+
+        //copy by value from one element to another
+        let anotherParagraph = firstParagraph.cloneNode(true);
+
+         //Move the paragraph above the h1 passing it by reference
+         h1.parentNode.insertBefore(anotherParagraph, h1);
+
+         let ul = document.getElementsByTagName("ul")[0];
+         for(let index = 0; index < ul.children.length; index++)
+         {
+             let child = ul.children[index];
+             child.style.display = "none";
+         }
+        //To see all the children  of ul
+         for(const child of ul.children)
+         {
+            console.log(child);
+         }
+         
     }
 
     window.addEventListener("load", Start);
